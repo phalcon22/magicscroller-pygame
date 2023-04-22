@@ -4,7 +4,7 @@ from gamelib.config import *
 
 pygame.mixer.pre_init(44100, -16, 2, 512)
 pygame.init()
-screen = pygame.display.set_mode(SCREEN_SIZE, FULLSCREEN | HWSURFACE | DOUBLEBUF, 32)
+screen = pygame.display.set_mode(SCREEN_SIZE, HWSURFACE | DOUBLEBUF, 32)
 pygame.mouse.set_visible(0)
 pygame.display.set_caption("Wizard")
 pygame.display.set_icon(pygame.image.load("Icon.ico"))
